@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "workspaces": [
+    "./*"
+  ],
   "scripts": {
+    "co": "sui-mono commit",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -18,5 +22,8 @@
   },
   "eslintConfig": {
     "extends": "standard"
+  },
+  "dependencies": {
+    "@s-ui/mono": "2.44.0"
   }
 }

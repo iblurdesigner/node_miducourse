@@ -6,3 +6,5 @@ node_modules/**/**
 clase3/node_modules
 clase4/node_modules
 clase5/node_modules
+
+package-lock.json
