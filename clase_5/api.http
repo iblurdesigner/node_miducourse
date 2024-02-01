@@ -1,0 +1,39 @@
+### recuperar todas las peliculas
+GET http://localhost:1234/movies
+
+#### REcuperar una pelicula por id
+GET http://localhost:1234/movies/5bf32fd8-bca5-11ee-adbe-0a0027000002
+
+#### Recuperar todas las peliculas por un genero, se lo pasamos como una query string
+GET http://localhost:1234/movies?genre=ACTION
+
+
+#### crear un post
+POST http://localhost:1234/movies
+Content-Type: application/json
+
+{
+    "title": "The Dark Knight rises blur",
+    "year": 2023,
+    "director": "Blur dev",
+    "duration": 152,
+    "poster": "https://i.ebayimg.com/images/g/yokAAOSw8w1YARbm/s-l1200.jpg",
+    "genre": [
+      "Action",
+      "Crime",
+      "Drama"
+    ]
+}
+
+#### Borrar una pelicula
+DELETE http://localhost:1234/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+
+#### Actualizar una pelicula
+PATCH http://localhost:1234/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+Content-Type: application/json
+
+{
+  "title": "Hola mundo",
+  "year": 2007,
+  "id": "121312"
+}
